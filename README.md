@@ -5,7 +5,7 @@
 
 ## Repositórios
 
-* [Python]('python')
-* [NodeJS]('nodejs')
-* [Go]('go')
-* [C]('c')
+* [Python](./python)
+* [NodeJS](./nodejs)
+* [Go](./go)
+* [C](./c)
