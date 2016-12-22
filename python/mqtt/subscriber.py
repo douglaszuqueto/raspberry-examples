@@ -29,8 +29,6 @@ def on_message(client, userdata, msg):
     if msg.topic == 'DZ/led':
         Led.set(17, int(MensagemRecebida))
 
-
-#programa principal:
 try:
         print("[STATUS] Inicializando MQTT...")
 
