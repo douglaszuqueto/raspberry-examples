@@ -1,6 +1,16 @@
 import paho.mqtt.client as mqtt
 import sys
-import led
+import RPi.GPIO as GPIO
+import led as Led
+
+def setup():
+
+    GPIO.setwarnings(False)
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setup(led, GPIO.OUT)
+
+setup()
+
 
 broker = "test.mosquitto.org"
 port = 1883
@@ -17,7 +27,7 @@ def on_message(client, userdata, msg):
     print("[MSG RECEBIDA] Topico: "+msg.topic+" / Mensagem: "+MensagemRecebida)
 
     if msg.topic == 'DZ/led':
-        led.set(17, MensagemRecebida)
+        Led.set(17, 1)
 
 
 #programa principal:
