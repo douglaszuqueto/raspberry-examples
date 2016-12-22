@@ -12,11 +12,11 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe(topic)
 
 def on_message(client, userdata, msg):
- MensagemRecebida = str(msg.payload)
- print("[MSG RECEBIDA] Topico: "+msg.topic+" / Mensagem: "+MensagemRecebida)
+    MensagemRecebida = str(msg.payload)
+    print("[MSG RECEBIDA] Topico: "+msg.topic+" / Mensagem: "+MensagemRecebida)
 
-if msg.topic == 'DZ/led'
-    led.set(MensagemRecebida)
+    if msg.topic == 'DZ/led'
+        led.set(MensagemRecebida)
 
 
 #programa principal:
