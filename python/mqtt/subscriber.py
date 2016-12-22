@@ -7,7 +7,7 @@ def setup():
 
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(led, GPIO.OUT)
+    GPIO.setup(17, GPIO.OUT)
 
 setup()
 
