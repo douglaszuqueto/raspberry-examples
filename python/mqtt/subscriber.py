@@ -4,7 +4,7 @@ import sys
 broker = "test.mosquitto.org"
 port = 1883
 keppAlive = 60
-topic = "DZ"
+topic = "DZ/#"
 
 def on_connect(client, userdata, flags, rc):
     print("[STATUS] Conectado ao Broker. Resultado de conexao: "+str(rc))
