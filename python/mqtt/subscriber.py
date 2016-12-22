@@ -27,7 +27,7 @@ def on_message(client, userdata, msg):
     print("[MSG RECEBIDA] Topico: "+msg.topic+" / Mensagem: "+MensagemRecebida)
 
     if msg.topic == 'DZ/led':
-        Led.set(17, 1)
+        Led.set(17, int(MensagemRecebida))
 
 
 #programa principal:
