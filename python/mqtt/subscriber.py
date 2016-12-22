@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 import sys
 
-broker = "iot.mosquitto.org"
+broker = "test.mosquitto.org"
 port = 1883
 keppAlive = 60
 topic = "DZ"
