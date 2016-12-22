@@ -16,10 +16,7 @@ def off(pin):
     print("Led off")
 
 def set(pin, value):
-    GPIO.output(pin, GPIO.LOW)
     if value == 1:
-        GPIO.output(pin, GPIO.HIGH)
-        print("Led on")
+        on(pin)
     else:
-        GPIO.output(pin, GPIO.LOW)
-        print("Led off")
+        off(pin)
