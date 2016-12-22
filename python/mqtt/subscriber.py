@@ -15,7 +15,7 @@ def on_message(client, userdata, msg):
  MensagemRecebida = str(msg.payload)
  print("[MSG RECEBIDA] Topico: "+msg.topic+" / Mensagem: "+MensagemRecebida)
 
- if msg.topic == 'DZ/led'
+if msg.topic == 'DZ/led'
     led.set(MensagemRecebida)
 
 
