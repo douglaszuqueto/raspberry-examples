@@ -19,6 +19,8 @@ def off(pin):
     print("Led off")
 
 def set(pin, value):
+    GPIO.setMode(GPIO.BCM)
+    
     GPIO.output(pin, GPIO.LOW)
     if(value == 1):
         print("Led on")
