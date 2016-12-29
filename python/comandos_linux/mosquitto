@@ -1,0 +1,6 @@
+import os
+import time
+
+while True:
+   os.system("mosquitto_pub -h test.mosquitto.org -t DZ/rasp/temp -m $(vcgencmd measure_temp | cut -d'=' -f2)")
+   time.sleep(1)
